@@ -19,13 +19,13 @@ map("n", "sj", "<C-w>j", opt)
 map("n", "sk", "<C-w>k", opt)
 map("n", "sl", "<C-w>l", opt)
 -- 左右比例控制
-map("n", "srh", ":vertical resize -2<CR>", opt)
-map("n", "srl", ":vertical resize +2<CR>", opt)
+map("n", "srh", ":vertical resize -4<CR>", opt)
+map("n", "srl", ":vertical resize +4<CR>", opt)
 map("n", "s,", ":vertical resize -20<CR>", opt)
 map("n", "s.", ":vertical resize +20<CR>", opt)
 -- 上下比例
-map("n", "srj", ":resize +10<CR>", opt)
-map("n", "srk", ":resize -10<CR>", opt)
+map("n", "srj", ":resize +2<CR>", opt)
+map("n", "srk", ":resize -2<CR>", opt)
 map("n", "<C-Down>", ":resize +2<CR>", opt)
 map("n", "<C-Up>", ":resize -2<CR>", opt)
 -- 等比例
@@ -56,6 +56,7 @@ map("n", "Z", ":foldopen<CR>", opt)
 -- nvim-tree
 -- alt + m 键打开关闭tree
 map("n", "<A-e>", ":NvimTreeToggle<CR>", opt)
+-- map("n", "fe", ":NvimTreeToggle<CR>", opt)
 -- 列表快捷键
 pluginKeys.nvimTreeList = {
     -- 打开文件或文件夹
@@ -124,17 +125,29 @@ pluginKeys.cmp = function(cmp)
             c = cmp.mapping.close()
         }),
         -- 上一个
-        ["<C-k>"] = cmp.mapping.select_prev_item(),
+        -- ["<C-k>"] = cmp.mapping.select_prev_item(),
+        -- -- 下一个
+        -- ["<C-j>"] = cmp.mapping.select_next_item(),
+        -- -- 确认
+        -- ["<CR>"] = cmp.mapping.confirm({
+        --     select = true,
+        --     behavior = cmp.ConfirmBehavior.Replace
+        -- }),
+        -- -- 如果窗口内容太多，可以滚动
+        -- ["<C-u>"] = cmp.mapping(cmp.mapping.scroll_docs(-4), {"i", "c"}),
+        -- ["<C-d>"] = cmp.mapping(cmp.mapping.scroll_docs(4), {"i", "c"}),
+        -- 上一个
+        ["<A-k>"] = cmp.mapping.select_prev_item(),
         -- 下一个
-        ["<C-j>"] = cmp.mapping.select_next_item(),
+        ["<A-j>"] = cmp.mapping.select_next_item(),
         -- 确认
         ["<CR>"] = cmp.mapping.confirm({
             select = true,
             behavior = cmp.ConfirmBehavior.Replace
         }),
         -- 如果窗口内容太多，可以滚动
-        ["<C-u>"] = cmp.mapping(cmp.mapping.scroll_docs(-4), {"i", "c"}),
-        ["<C-d>"] = cmp.mapping(cmp.mapping.scroll_docs(4), {"i", "c"}),
+        ["<A-u>"] = cmp.mapping(cmp.mapping.scroll_docs(-4), {"i", "c"}),
+        ["<A-d>"] = cmp.mapping(cmp.mapping.scroll_docs(4), {"i", "c"}),
  --           -- 自定义代码段跳转到下一个参数
  --   ["<C-l>"] = cmp.mapping(function(_)
  --     if vim.fn["vsnip#available"](1) == 1 then
