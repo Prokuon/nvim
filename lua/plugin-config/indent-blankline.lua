@@ -7,9 +7,12 @@ vim.opt.termguicolors = true
 vim.cmd [[highlight IndentBlanklineIndent1 guifg=#E06C75 gui=nocombine]]
 vim.cmd [[highlight IndentBlanklineIndent2 guifg=#E5C07B gui=nocombine]]
 vim.cmd [[highlight IndentBlanklineIndent3 guifg=#98C379 gui=nocombine]]
--- vim.cmd [[highlight IndentBlanklineIndent4 guifg=#56B6C2 gui=nocombine]]
-vim.cmd [[highlight IndentBlanklineIndent5 guifg=#61AFEF gui=nocombine]]
--- vim.cmd [[highlight IndentBlanklineIndent6 guifg=#C678DD gui=nocombine]]
+vim.cmd [[highlight IndentBlanklineIndent4 guifg=#61AFEF gui=nocombine]]
+
+-- vim.cmd [[highlight IndentBlanklineIndent1 guifg=#1a1a1a gui=nocombine]]
+-- vim.cmd [[highlight IndentBlanklineIndent2 guifg=#121212 gui=nocombine]]
+-- vim.cmd [[highlight IndentBlanklineIndent3 guifg=#0a0a0a gui=nocombine]]
+-- vim.cmd [[highlight IndentBlanklineIndent4 guifg=#000000 gui=nocombine]]
 
 vim.opt.list = true
 vim.opt.listchars:append "space:⋅"
@@ -56,10 +59,17 @@ ident_blankline.setup({
         "IndentBlanklineIndent1",
         "IndentBlanklineIndent2",
         "IndentBlanklineIndent3",
-        -- "IndentBlanklineIndent4",
-        "IndentBlanklineIndent5",
-        -- "IndentBlanklineIndent6",
+        "IndentBlanklineIndent4",
     },
-        --
+
+    -- space_char_highlight_list = {
+    --     "IndentBlanklineIndent1",
+    --     "IndentBlanklineIndent2",
+    --     "IndentBlanklineIndent3",
+    --     "IndentBlanklineIndent4",
+    -- },
+
+    -- show_trailing_blankline_indent = false,
+
     char = "▏",
 })
