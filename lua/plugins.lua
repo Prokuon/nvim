@@ -71,7 +71,7 @@ return require('packer').startup({
         -- Rust 增强
         use("simrat39/rust-tools.nvim")
         -- 常见编程语言代码段
-        use("rafamadriz/friendly-snippets")
+        -- use("rafamadriz/friendly-snippets")
         -- ui (新增)
         use("onsails/lspkind-nvim")
         -- 竖线
@@ -83,13 +83,13 @@ return require('packer').startup({
             require('Comment').setup()
         end
         }
+        -- use({
+        --     "iamcco/markdown-preview.nvim",
+        --     run = function() vim.fn["mkdp#util#install"]() end,
+        -- })
         -- markdown预览
-        use({
-            "iamcco/markdown-preview.nvim",
-            run = function() vim.fn["mkdp#util#install"]() end,
-        })
-        -- lualine底部信息栏
         use({ "iamcco/markdown-preview.nvim", run = "cd app && npm install", setup = function() vim.g.mkdp_filetypes = { "markdown" } end, ft = { "markdown" }, })
+        -- lualine底部信息栏
         use({ "nvim-lualine/lualine.nvim", requires = { "kyazdani42/nvim-web-devicons" } })
         use("arkav/lualine-lsp-progress")
 

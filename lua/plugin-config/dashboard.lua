@@ -28,6 +28,12 @@ db.setup({
                 action = 'PackerSync',
                 key = 'u',
             },
+            {
+                desc = ' Mason',
+                group = 'Label',
+                action = 'Mason',
+                key = 'm',
+            },
             {   desc = ' Projects',
                 group = 'Label',
                 action = 'Telescope projects',
@@ -45,12 +51,6 @@ db.setup({
             --     action = 'Telescope oldfiles',
             --     key = 'r',
             -- },
-            {
-                desc = ' Mason',
-                group = 'Label',
-                action = 'Mason',
-                key = 'm',
-            }
         },
 
         center = {
