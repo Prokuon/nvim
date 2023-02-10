@@ -92,6 +92,7 @@ return require('packer').startup({
         -- lualine底部信息栏
         use({ "nvim-lualine/lualine.nvim", requires = { "kyazdani42/nvim-web-devicons" } })
         use("arkav/lualine-lsp-progress")
+        use("lambdalisue/suda.vim")
 
     end,
     config = {

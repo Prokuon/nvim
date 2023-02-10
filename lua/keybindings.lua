@@ -95,6 +95,11 @@ map("n", "<C-p>", ":Telescope find_files<CR>", opt)
 -- 全局搜索
 map("n", "<C-f>", ":Telescope live_grep<CR>", opt)
 
+-- 自定义别名
+vim.api.nvim_create_user_command('W', 'SudaWrite', {})
+vim.api.nvim_create_user_command('Pc', 'PackerSync', {})
+vim.api.nvim_create_user_command('W', 'SudaWrite', {})
+
 -- Telescope 列表中 插入模式快捷键
 pluginKeys.telescopeList = {
     i = {

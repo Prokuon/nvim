@@ -223,6 +223,11 @@ _G.packer_plugins = {
     path = "/home/prokyon/.local/share/nvim/site/pack/packer/start/schemastore.nvim",
     url = "https://github.com/b0o/schemastore.nvim"
   },
+  ["suda.vim"] = {
+    loaded = true,
+    path = "/home/prokyon/.local/share/nvim/site/pack/packer/start/suda.vim",
+    url = "https://github.com/lambdalisue/suda.vim"
+  },
   ["telescope-env.nvim"] = {
     loaded = true,
     path = "/home/prokyon/.local/share/nvim/site/pack/packer/start/telescope-env.nvim",
