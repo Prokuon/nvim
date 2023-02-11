@@ -107,7 +107,7 @@ require("catppuccin").setup({
         mocha = {
             blue = "#df4a16",
             surface2 = "#9f9f9f",
-            surface1 = "#df4a16",
+            surface1 = "#777777",
             surface0 = "#272727",
             base = "#272727",
             mantle = "#000000",
