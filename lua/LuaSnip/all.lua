@@ -46,30 +46,30 @@ return {
     ),
 
     require("luasnip").parser.parse_snippet(
-        { trig = "pmat", name = "pmat" },
-        "\\begin{pmatrix} $1 \\end{pmatrix} $0"
-    ),
-
-    require("luasnip").parser.parse_snippet(
         { trig = "lr", name = "left( right)" },
         "\\left( ${1:${TM_SELECTED_TEXT}} \\right) $0"
     ),
+
     require("luasnip").parser.parse_snippet(
         { trig = "lr(", name = "left( right)" },
         "\\left( ${1:${TM_SELECTED_TEXT}} \\right) $0"
     ),
+
     require("luasnip").parser.parse_snippet(
         { trig = "lr|", name = "left| right|" },
         "\\left\\| ${1:${TM_SELECTED_TEXT}} \\right\\| $0"
     ),
+
     require("luasnip").parser.parse_snippet(
         { trig = "lr{", name = "left{ right}" },
         "\\left\\{ ${1:${TM_SELECTED_TEXT}} \\right\\\\} $0"
     ),
+
     require("luasnip").parser.parse_snippet(
         { trig = "lr[", name = "left[ right]" },
         "\\left[ ${1:${TM_SELECTED_TEXT}} \\right] $0"
     ),
+
     require("luasnip").parser.parse_snippet(
         { trig = "lra", name = "leftangle rightangle" },
         "\\left< ${1:${TM_SELECTED_TEXT}} \\right>$0"
@@ -84,13 +84,86 @@ return {
         { trig = "sequence", name = "Sequence indexed by n, from m to infinity" },
         "(${1:a}_${2:n})_{${2:n}=${3:m}}^{${4:\\infty}}"
     ),
+
     require("luasnip").parser.parse_snippet(
-        { trig = "mat33", name = "beginmatrix33"},
-        "\\left${1:(}\\begin{matrix} ${2:n} & ${3:n} & ${4:n} & \\\\\\ ${5:n} & ${6:n} & ${7:n} \\\\\\ ${8:n} & ${9:n} & ${10:n} \\\\\\ \\end{matrix} \\right${11:)}"
+        { trig = "box", name = "box"},
+        "\\boxed{${1:n}}"
     ),
-    require("luasnip").parser.parse_snippet(
-        { trig = "mat", name = "beginmatrix33"},
-        "\\left${1:(}\\begin{matrix} ${2:n}\\end{matrix} \\right${3:)}"
-    )
+
+    require("luasnip").snippet(
+        {trig = "ag", dscr = "aligned"},
+        fmt(
+            [[
+                \begin{aligned}
+                    <>
+                \end{aligned}
+            ]],
+
+            { i(1) },
+            { delimiters = "<>"}
+        )
+    ),
+
+    require("luasnip").snippet(
+        { trig = "mat", dscr = "matrix"},
+        fmt(
+            [[
+                \left<> \begin{matrix} 
+                    <>
+                \end{matrix} \right<>"
+            ]],
+
+            {i(1, "["), i(2, "n"), i(3, "]")},
+            { delimiters = "<>"}
+        )
+    ),
+
+    require("luasnip").snippet(
+        { trig = "22", dscr = "matrix22"},
+        fmt(
+            [[
+                \left<> \begin{matrix} 
+                    <> & <> \\
+                    <> & <> \\
+                \end{matrix} \right<>"
+            ]],
+
+            {i(1, "["), i(2, "n"), i(3, "n"), i(4, "n"), i(5, "n"), i(6, "]")},
+            { delimiters = "<>"}
+        )
+    ),
+
+    require("luasnip").snippet(
+        { trig = "33", dscr = "matrix33"},
+        fmt(
+            [[
+                \left<> \begin{matrix} 
+                    <> & <> & <>\\
+                    <> & <> & <>\\
+                    <> & <> & <>\\
+                \end{matrix} \right<>"
+            ]],
+
+            {i(1, "["), i(2, "n"), i(3, "n"), i(4, "n"), i(5, "n"), i(6, "n"), i(7, "n"), i(8, "n"), i(9, "n"), i(10, "n"), i(11, "]")},
+            { delimiters = "<>"}
+        )
+    ),
+
+    require("luasnip").snippet(
+        { trig = "44", dscr = "matrix44"},
+        fmt(
+            [[
+                \left<> \begin{matrix} 
+                    <> & <> & <> & <>\\
+                    <> & <> & <> & <>\\
+                    <> & <> & <> & <>\\
+                    <> & <> & <> & <>\\
+                \end{matrix} \right<>"
+            ]],
+
+            {i(1, "["), i(2, "n"), i(3, "n"), i(4, "n"), i(5, "n"), i(6, "n"), i(7, "n"), i(8, "n"), i(9, "n"), i(10, "n"), i(11, "n"), i(12, "n"), i(13, "n"), i(14, "n"), i(15, "n"), i(16, "n"), i(17, "n"), i(18, "]")},
+            { delimiters = "<>"}
+        )
+    ),
 
 }
