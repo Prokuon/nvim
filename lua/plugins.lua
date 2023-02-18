@@ -94,7 +94,12 @@ return require('packer').startup({
         use("arkav/lualine-lsp-progress")
         -- 保存只读文件
         use("lambdalisue/suda.vim")
-
+        -- 代码片段
+        -- use("SirVer/ultisnips")
+        -- LATEX支持
+        use("lervag/vimtex")
+        -- use("honza/vim-snippets")
+        use("L3MON4D3/LuaSnip")
     end,
     config = {
         max_jobs = 16,
