@@ -85,8 +85,8 @@ return {
         "(${1:a}_${2:n})_{${2:n}=${3:m}}^{${4:\\infty}}"
     ),
     require("luasnip").parser.parse_snippet(
-        { trig = "bm33", name = "beginmatrix33"},
-        "\\left${1:(}\\begin{matrix} ${2:n} & ${3:n} & ${4:n} & \\\\ ${5:n} & ${6:n} & ${7:n} \\\\ ${8:n} & ${9:n} & ${10:n} \\\\ \\end{matrix} \\right${11:)}"
+        { trig = "mat33", name = "beginmatrix33"},
+        "\\left${1:(}\\begin{matrix} ${2:n} & ${3:n} & ${4:n} & \\\\\\ ${5:n} & ${6:n} & ${7:n} \\\\\\ ${8:n} & ${9:n} & ${10:n} \\\\\\ \\end{matrix} \\right${11:)}"
     ),
     require("luasnip").parser.parse_snippet(
         { trig = "mat", name = "beginmatrix33"},
