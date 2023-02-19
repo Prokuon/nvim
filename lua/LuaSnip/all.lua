@@ -86,7 +86,7 @@ return {
     ),
 
     require("luasnip").parser.parse_snippet(
-        { trig = "box", name = "box"},
+        { trig = "box", name = "boxed"},
         "\\boxed{${1:n}}"
     ),
 
@@ -100,6 +100,20 @@ return {
             ]],
 
             { i(1) },
+            { delimiters = "<>"}
+        )
+    ),
+
+    require("luasnip").snippet(
+        { trig = "case", dscr = "cases"},
+        fmt(
+            [[
+                \begin{cases} 
+                    <>
+                \end{cases}
+            ]],
+
+            { i(1, "n") },
             { delimiters = "<>"}
         )
     ),
@@ -162,6 +176,78 @@ return {
             ]],
 
             {i(1, "["), i(2, "n"), i(3, "n"), i(4, "n"), i(5, "n"), i(6, "n"), i(7, "n"), i(8, "n"), i(9, "n"), i(10, "n"), i(11, "n"), i(12, "n"), i(13, "n"), i(14, "n"), i(15, "n"), i(16, "n"), i(17, "n"), i(18, "]")},
+            { delimiters = "<>"}
+        )
+    ),
+
+    require("luasnip").snippet(
+        {trig = "bd", dscr = "boldsymbol"},
+        fmt(
+            [[
+                \boldsymbol{<>}
+            ]],
+
+            { i(1, "n") },
+            { delimiters = "<>"}
+        )
+    ),
+
+    require("luasnip").snippet(
+        {trig = "mb", dscr = "mathbf"},
+        fmt(
+            [[
+                \mathbf{<>}
+            ]],
+
+            { i(1, "n") },
+            { delimiters = "<>"}
+        )
+    ),
+
+    require("luasnip").snippet(
+        {trig = "frac", dscr = "frac"},
+        fmt(
+            [[
+                \frac{<>}{<>}
+            ]],
+
+            { i(1, "n"), i(2, "n") },
+            { delimiters = "<>"}
+        )
+    ),
+
+    require("luasnip").snippet(
+        {trig = "sqrt", dscr = "sqrt"},
+        fmt(
+            [[
+                \sqrt{<>}
+            ]],
+
+            { i(1, "n") },
+            { delimiters = "<>"}
+        )
+    ),
+    
+    require("luasnip").snippet(
+        {trig = "_", dscr = "_"},
+        fmt(
+            [[
+                _{<>}
+            ]],
+
+            { i(1, "n") },
+            { delimiters = "<>"}
+        )
+    ),
+
+    require("luasnip").snippet(
+        {trig = "^", dscr = "^"},
+        fmt(
+            [[
+                ^{<>}
+            ]],
+
+            { i(1, "n") },
             { delimiters = "<>"}
         )
     ),
