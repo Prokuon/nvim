@@ -110,7 +110,7 @@ return {
             [[
                 \left<> \begin{matrix} 
                     <>
-                \end{matrix} \right<>"
+                \end{matrix} \right<>
             ]],
 
             {i(1, "["), i(2, "n"), i(3, "]")},
@@ -125,7 +125,7 @@ return {
                 \left<> \begin{matrix} 
                     <> & <> \\
                     <> & <> \\
-                \end{matrix} \right<>"
+                \end{matrix} \right<>
             ]],
 
             {i(1, "["), i(2, "n"), i(3, "n"), i(4, "n"), i(5, "n"), i(6, "]")},
@@ -141,7 +141,7 @@ return {
                     <> & <> & <>\\
                     <> & <> & <>\\
                     <> & <> & <>\\
-                \end{matrix} \right<>"
+                \end{matrix} \right<>
             ]],
 
             {i(1, "["), i(2, "n"), i(3, "n"), i(4, "n"), i(5, "n"), i(6, "n"), i(7, "n"), i(8, "n"), i(9, "n"), i(10, "n"), i(11, "]")},
@@ -158,7 +158,7 @@ return {
                     <> & <> & <> & <>\\
                     <> & <> & <> & <>\\
                     <> & <> & <> & <>\\
-                \end{matrix} \right<>"
+                \end{matrix} \right<>
             ]],
 
             {i(1, "["), i(2, "n"), i(3, "n"), i(4, "n"), i(5, "n"), i(6, "n"), i(7, "n"), i(8, "n"), i(9, "n"), i(10, "n"), i(11, "n"), i(12, "n"), i(13, "n"), i(14, "n"), i(15, "n"), i(16, "n"), i(17, "n"), i(18, "]")},
