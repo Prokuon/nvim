@@ -1,17 +1,8 @@
 -- Place this in ${HOME}/.config/nvim/LuaSnip/all.lua
 return {
   -- A snippet that expands the trigger "hi" into the string "Hello, world!".
-    require("luasnip").snippet(
-        { trig = "hi" },
-        { t("Hello, world!") }
-    ),
-
   -- To return multiple snippets, use one `return` statement per snippet file
   -- and return a table of Lua snippets.
-    require("luasnip").snippet(
-        { trig = "foo" },
-        { t("Another snippet.") }
-    ),
     require("luasnip").parser.parse_snippet(
         { trig = "sum", name = "sum" },
         "\\sum_{n=${1:1}}^{${2:\\infty}} ${3:a_n z^n}"
@@ -83,6 +74,76 @@ return {
     require("luasnip").parser.parse_snippet(
         { trig = "sequence", name = "Sequence indexed by n, from m to infinity" },
         "(${1:a}_${2:n})_{${2:n}=${3:m}}^{${4:\\infty}}"
+    ),
+
+    require("luasnip").snippet(
+        { trig = ";a", dscr = "alpha" },
+        { t("\\alpha") }
+    ),
+
+    require("luasnip").snippet(
+        { trig = ";b", dscr = "beta" },
+        { t("\\beta") }
+    ),
+
+    require("luasnip").snippet(
+        { trig = ";g", dscr = "gamma" },
+        { t("\\gamma") }
+    ),
+
+    require("luasnip").snippet(
+        { trig = ";d", dscr = "delta" },
+        { t("\\delta") }
+    ),
+
+    require("luasnip").snippet(
+        { trig = ";e", dscr = "epsilon" },
+        { t("\\epsilon") }
+    ),
+    
+    require("luasnip").snippet(
+        { trig = ";z", dscr = "zeta" },
+        { t("\\zeta") }
+    ),
+
+    require("luasnip").snippet(
+        { trig = ";et", dscr = "eta" },
+        { t("\\eta") }
+    ),
+
+    require("luasnip").snippet(
+        { trig = ";th", dscr = "theta" },
+        { t("\\theta") }
+    ),
+
+    require("luasnip").snippet(
+        { trig = ";i", dscr = "iota" },
+        { t("\\iota") }
+    ),
+
+    require("luasnip").snippet(
+        { trig = ";k", dscr = "kappa" },
+        { t("\\kappa") }
+    ),
+
+    require("luasnip").snippet(
+        { trig = ";l", dscr = "lambda" },
+        { t("\\lambda") }
+    ),
+
+    require("luasnip").snippet(
+        { trig = ";m", dscr = "mu" },
+        { t("\\mu") }
+    ),
+
+    require("luasnip").snippet(
+        { trig = ";n", dscr = "nu" },
+        { t("\\nu") }
+    ),
+
+    require("luasnip").snippet(
+        { trig = ";x", dscr = "xi" },
+        { t("\\xi") }
     ),
 
     require("luasnip").parser.parse_snippet(
@@ -223,7 +284,7 @@ return {
                 \sqrt{<>}
             ]],
 
-            { i(1, "n") },
+           { i(1, "n") },
             { delimiters = "<>"}
         )
     ),
@@ -252,4 +313,7 @@ return {
         )
     ),
 
+
 }
+
+
