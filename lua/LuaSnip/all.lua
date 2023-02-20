@@ -146,6 +146,56 @@ return {
         { t("\\xi") }
     ),
 
+    require("luasnip").snippet(
+        { trig = ";om", dscr = "omicron" },
+        { t("\\omicron") }
+    ),
+
+    require("luasnip").snippet(
+        { trig = ";p", dscr = "pi" },
+        { t("\\pi") }
+    ),
+
+    require("luasnip").snippet(
+        { trig = ";r", dscr = "rho" },
+        { t("\\rho") }
+    ),
+
+    require("luasnip").snippet(
+        { trig = ";s", dscr = "sigma" },
+        { t("\\sigma") }
+    ),
+
+    require("luasnip").snippet(
+        { trig = ";t", dscr = "tau" },
+        { t("\\tau") }
+    ),
+
+    require("luasnip").snippet(
+        { trig = ";u", dscr = "upsilon" },
+        { t("\\upsilon") }
+    ),
+
+    require("luasnip").snippet(
+        { trig = ";f", dscr = "phi" },
+        { t("\\phi") }
+    ),
+
+    require("luasnip").snippet(
+        { trig = ";h", dscr = "chi" },
+        { t("\\chi") }
+    ),
+
+    require("luasnip").snippet(
+        { trig = ";ps", dscr = "psi" },
+        { t("\\psi") }
+    ),
+
+    require("luasnip").snippet(
+        { trig = ";o", dscr = "omega" },
+        { t("\\omega") }
+    ),
+
     require("luasnip").parser.parse_snippet(
         { trig = "box", name = "boxed"},
         "\\boxed{${1:n}}"
