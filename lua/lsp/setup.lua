@@ -82,7 +82,7 @@ require("mason-lspconfig").setup({
         "yamlls",
     --    "gopls",
         "clangd",
-    --    "cmake",
+       -- "cmake",
         "marksman",
     },
 })
