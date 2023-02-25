@@ -8,7 +8,7 @@ require('keybindings')
 require('colorscheme')
 -- 内置lsp
 require("lsp.setup")
--- require("lsp.cmp")
+require("lsp.cmp")
 require("lsp.ui")
 -- 插件配置
 -- 缩进指示线
