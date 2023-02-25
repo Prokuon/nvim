@@ -88,9 +88,17 @@ return require('packer').startup({
         --     run = function() vim.fn["mkdp#util#install"]() end,
         -- })
         -- markdown预览
-        use({ "iamcco/markdown-preview.nvim", run = "cd app && npm install", setup = function() vim.g.mkdp_filetypes = { "markdown" } end, ft = { "markdown" }, })
+        use({ 
+            "iamcco/markdown-preview.nvim", run = "cd app && npm install", 
+            setup = function() vim.g.mkdp_filetypes = { "markdown" } 
+            end, 
+            ft = { "markdown" }, 
+        })
         -- lualine底部信息栏
-        use({ "nvim-lualine/lualine.nvim", requires = { "kyazdani42/nvim-web-devicons" } })
+        use({ 
+            "nvim-lualine/lualine.nvim", 
+            requires = { "kyazdani42/nvim-web-devicons" } 
+        })
         use("arkav/lualine-lsp-progress")
         -- 保存只读文件
         use("lambdalisue/suda.vim")
@@ -101,6 +109,15 @@ return require('packer').startup({
         -- use("honza/vim-snippets")
         use("L3MON4D3/LuaSnip")
         use({"francoiscabrol/ranger.vim", requires  = {"rbgrouleff/bclose.vim" } })
+        use ({
+            "akinsho/toggleterm.nvim", 
+            tag = '*', 
+            config = function()
+                require("toggleterm").setup()
+            end
+        })
+
+
     end,
     config = {
         max_jobs = 16,

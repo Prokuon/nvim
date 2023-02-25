@@ -35,3 +35,5 @@ require("plugin-config.nvim-treesitter")
 require("plugin-config.vimtex")
 -- 代码块
 require("plugin-config.luasnip")
+-- 浮动终端
+require("plugin-config.toggleterm")
