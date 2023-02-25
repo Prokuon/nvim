@@ -100,6 +100,9 @@ vim.api.nvim_create_user_command('W', 'SudaWrite', {})
 vim.api.nvim_create_user_command('Pc', 'PackerSync', {})
 vim.api.nvim_create_user_command('M', 'Mason', {})
 
+-- ranger
+map("n", "<A-f>", ":Ranger<CR>", opt)
+
 -- Telescope 列表中 插入模式快捷键
 pluginKeys.telescopeList = {
     i = {

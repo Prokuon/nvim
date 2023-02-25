@@ -100,6 +100,7 @@ return require('packer').startup({
         use("lervag/vimtex")
         -- use("honza/vim-snippets")
         use("L3MON4D3/LuaSnip")
+        use({"francoiscabrol/ranger.vim", requires  = {"rbgrouleff/bclose.vim" } })
     end,
     config = {
         max_jobs = 16,

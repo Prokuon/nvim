@@ -182,6 +182,11 @@ return {
     ),
 
     require("luasnip").snippet(
+        { trig = ";vf", dscr = "varphi"},
+        { t("\\varphi")}
+    ),
+
+    require("luasnip").snippet(
         { trig = ";h", dscr = "chi" },
         { t("\\chi") }
     ),
@@ -194,6 +199,11 @@ return {
     require("luasnip").snippet(
         { trig = ";o", dscr = "omega" },
         { t("\\omega") }
+    ),
+
+    require("luasnip").snippet(
+        { trig = "---", dscr = "---"},
+        { t("----------------------------------------")}
     ),
 
     require("luasnip").parser.parse_snippet(
