@@ -37,5 +37,5 @@ require("plugin-config.vimtex")
 require("plugin-config.luasnip")
 -- 浮动终端
 require("plugin-config.toggleterm")
---coc配置
+-- coc配置
 require("plugin-config.coc")
