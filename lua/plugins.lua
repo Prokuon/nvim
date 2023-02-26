@@ -116,6 +116,7 @@ return require('packer').startup({
                 require("toggleterm").setup()
             end
         })
+        use({'neoclide/coc.nvim', branch = 'release'})
 
 
     end,

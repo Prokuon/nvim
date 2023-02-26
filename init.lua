@@ -7,9 +7,9 @@ require('keybindings')
 -- 主题设置
 require('colorscheme')
 -- 内置lsp
-require("lsp.setup")
-require("lsp.cmp")
-require("lsp.ui")
+-- require("lsp.setup")
+-- require("lsp.cmp")
+-- require("lsp.ui")
 -- 插件配置
 -- 缩进指示线
 require("plugin-config.indent-blankline")
@@ -37,3 +37,5 @@ require("plugin-config.vimtex")
 require("plugin-config.luasnip")
 -- 浮动终端
 require("plugin-config.toggleterm")
+--coc配置
+require("plugin-config.coc")
