@@ -29,10 +29,10 @@ db.setup({
                 key = 'u',
             },
             {
-                desc = ' Mason',
+                desc = ' Coc',
                 group = 'Label',
-                action = 'Mason',
-                key = 'm',
+                action = 'CocUpdate',
+                key = 'c',
             },
             {   desc = ' Projects',
                 group = 'Label',
