@@ -4,10 +4,10 @@ if not status then
   return
 end
 vim.opt.termguicolors = true
-vim.cmd [[highlight IndentBlanklineIndent1 guifg=#E06C75 gui=nocombine]]
-vim.cmd [[highlight IndentBlanklineIndent2 guifg=#E5C07B gui=nocombine]]
-vim.cmd [[highlight IndentBlanklineIndent3 guifg=#98C379 gui=nocombine]]
-vim.cmd [[highlight IndentBlanklineIndent4 guifg=#61AFEF gui=nocombine]]
+vim.cmd [[highlight IndentBlanklineIndent1 guifg=#183E6C gui=nocombine]]
+vim.cmd [[highlight IndentBlanklineIndent2 guifg=#3B6AA8 gui=nocombine]]
+vim.cmd [[highlight IndentBlanklineIndent3 guifg=#71A5D3 gui=nocombine]]
+vim.cmd [[highlight IndentBlanklineIndent4 guifg=#B4D3E6 gui=nocombine]]
 
 -- vim.cmd [[highlight IndentBlanklineIndent1 guifg=#1a1a1a gui=nocombine]]
 -- vim.cmd [[highlight IndentBlanklineIndent2 guifg=#121212 gui=nocombine]]
