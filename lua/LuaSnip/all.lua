@@ -341,10 +341,10 @@ return {
         {trig = "sqrt", dscr = "sqrt"},
         fmt(
             [[
-                \sqrt{<>}
+                \sqrt[<>]{<>}
             ]],
 
-           { i(1, "n") },
+           { i(1, "n"), i(2, "n") },
             { delimiters = "<>"}
         )
     ),
