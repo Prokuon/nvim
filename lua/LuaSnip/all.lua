@@ -302,6 +302,23 @@ return {
     ),
 
     require("luasnip").snippet(
+        { trig = "55", dscr = "matrix55"},
+        fmt(
+            [[
+                \left<> \begin{matrix} 
+                    <> & <> & <> & <> & <>\\
+                    <> & <> & <> & <> & <>\\
+                    <> & <> & <> & <> & <>\\
+                    <> & <> & <> & <> & <>\\
+                    <> & <> & <> & <> & <>\\
+                \end{matrix} \right<>
+            ]],
+
+            {i(1, "("), i(2, "n"), i(3, "n"), i(4, "n"), i(5, "n"), i(6, "n"), i(7, "n"), i(8, "n"), i(9, "n"), i(10, "n"), i(11, "n"), i(12, "n"), i(13, "n"), i(14, "n"), i(15, "n"), i(16, "n"), i(17, "n"), i(18, "n"), i(19, "n"), i(20, "n"), i(21, "n"), i(22, "n"), i(23, "n"), i(24, "n"), i(25, "n"), i(26, "n"), i(27, ")")},
+            { delimiters = "<>"}
+        )
+    ),
+    require("luasnip").snippet(
         {trig = "bd", dscr = "boldsymbol"},
         fmt(
             [[
