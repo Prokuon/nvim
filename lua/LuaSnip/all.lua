@@ -350,7 +350,7 @@ return {
     ),
     
     require("luasnip").snippet(
-        {trig = "_", dscr = "_"},
+        {trig = "__", dscr = "_"},
         fmt(
             [[
                 _{<>}
@@ -362,7 +362,7 @@ return {
     ),
 
     require("luasnip").snippet(
-        {trig = "^", dscr = "^"},
+        {trig = "^^", dscr = "^"},
         fmt(
             [[
                 ^{<>}
