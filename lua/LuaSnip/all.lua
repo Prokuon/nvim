@@ -389,8 +389,16 @@ return {
             { delimiters = "<>"}
         )
     ),
+    require("luasnip").snippet(
+        {trig = "limits", dscr = "limits"},
+        fmt(
+            [[
+                \mathop{<>}\limits_{<>}^{<>}
+            ]],
 
-
+            { i(1, "n"), i(2, "n"), i(3, "n") },
+            { delimiters = "<>"}
+        )
+    )
 }
-
 
