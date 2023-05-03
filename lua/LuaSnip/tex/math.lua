@@ -184,29 +184,6 @@ return{
             { delimiters = "<>"}
         )
     ),
-    require("luasnip").snippet(
-        {trig = "bd", dscr = "boldsymbol"},
-        fmt(
-            [[
-                \boldsymbol{<>}
-            ]],
-
-            { i(1, "n") },
-            { delimiters = "<>"}
-        )
-    ),
-
-    require("luasnip").snippet(
-        {trig = "mb", dscr = "mathbf"},
-        fmt(
-            [[
-                \mathbf{<>}
-            ]],
-
-            { i(1, "n") },
-            { delimiters = "<>"}
-        )
-    ),
 
     require("luasnip").snippet(
         {trig = "vb", dscr = "verb"},
