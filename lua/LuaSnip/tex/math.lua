@@ -105,12 +105,12 @@ return{
         { trig = "mat", dscr = "matrix"},
         fmt(
             [[
-                \left<> \begin{matrix} 
+                \begin{matrix} 
                     <>
-                \end{matrix} \right<>
+                \end{matrix}
             ]],
 
-            {i(1, "("), i(2, "n"), i(3, ")")},
+            {i(1, "n")},
             { delimiters = "<>"}
         )
     ),
@@ -119,13 +119,13 @@ return{
         { trig = "m22", dscr = "matrix22"},
         fmt(
             [[
-                \left<> \begin{matrix} 
+                \begin{matrix} 
                     <> & <> \\
                     <> & <> \\
-                \end{matrix} \right<>
+                \end{matrix}
             ]],
 
-            {i(1, "("), i(2, "n"), i(3, "n"), i(4, "n"), i(5, "n"), i(6, ")")},
+            {i(1, "n"), i(2, "n"), i(3, "n"), i(4, "n")},
             { delimiters = "<>"}
         )
     ),
@@ -134,14 +134,14 @@ return{
         { trig = "m33", dscr = "matrix33"},
         fmt(
             [[
-                \left<> \begin{matrix} 
+                \begin{matrix} 
                     <> & <> & <>\\
                     <> & <> & <>\\
                     <> & <> & <>\\
-                \end{matrix} \right<>
+                \end{matrix}
             ]],
 
-            {i(1, "("), i(2, "n"), i(3, "n"), i(4, "n"), i(5, "n"), i(6, "n"), i(7, "n"), i(8, "n"), i(9, "n"), i(10, "n"), i(11, ")")},
+            {i(1, "n"), i(2, "n"), i(3, "n"), i(4, "n"), i(5, "n"), i(6, "n"), i(7, "n"), i(8, "n"), i(9, "n")},
             { delimiters = "<>"}
         )
     ),
@@ -150,15 +150,15 @@ return{
         { trig = "m44", dscr = "matrix44"},
         fmt(
             [[
-                \left<> \begin{matrix} 
+                \begin{matrix}
                     <> & <> & <> & <>\\
                     <> & <> & <> & <>\\
                     <> & <> & <> & <>\\
                     <> & <> & <> & <>\\
-                \end{matrix} \right<>
+                \end{matrix}
             ]],
 
-            {i(1, "("), i(2, "n"), i(3, "n"), i(4, "n"), i(5, "n"), i(6, "n"), i(7, "n"), i(8, "n"), i(9, "n"), i(10, "n"), i(11, "n"), i(12, "n"), i(13, "n"), i(14, "n"), i(15, "n"), i(16, "n"), i(17, "n"), i(18, ")")},
+            {i(1, "n"), i(2, "n"), i(3, "n"), i(4, "n"), i(5, "n"), i(6, "n"), i(7, "n"), i(8, "n"), i(9, "n"), i(10, "n"), i(11, "n"), i(12, "n"), i(13, "n"), i(14, "n"), i(15, "n"), i(16, "n")},
             { delimiters = "<>"}
         )
     ),
@@ -167,16 +167,16 @@ return{
         { trig = "m55", dscr = "matrix55"},
         fmt(
             [[
-                \left<> \begin{matrix} 
+                \begin{matrix} 
                     <> & <> & <> & <> & <>\\
                     <> & <> & <> & <> & <>\\
                     <> & <> & <> & <> & <>\\
                     <> & <> & <> & <> & <>\\
                     <> & <> & <> & <> & <>\\
-                \end{matrix} \right<>
+                \end{matrix}
             ]],
 
-            {i(1, "("), i(2, "n"), i(3, "n"), i(4, "n"), i(5, "n"), i(6, "n"), i(7, "n"), i(8, "n"), i(9, "n"), i(10, "n"), i(11, "n"), i(12, "n"), i(13, "n"), i(14, "n"), i(15, "n"), i(16, "n"), i(17, "n"), i(18, "n"), i(19, "n"), i(20, "n"), i(21, "n"), i(22, "n"), i(23, "n"), i(24, "n"), i(25, "n"), i(26, "n"), i(27, ")")},
+            {i(1, "n"), i(2, "n"), i(3, "n"), i(4, "n"), i(5, "n"), i(6, "n"), i(7, "n"), i(8, "n"), i(9, "n"), i(10, "n"), i(11, "n"), i(12, "n"), i(13, "n"), i(14, "n"), i(15, "n"), i(16, "n"), i(17, "n"), i(18, "n"), i(19, "n"), i(20, "n"), i(21, "n"), i(22, "n"), i(23, "n"), i(24, "n"), i(25, "n")},
             { delimiters = "<>"}
         )
     ),
