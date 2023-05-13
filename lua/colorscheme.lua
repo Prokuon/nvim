@@ -83,7 +83,7 @@ require("catppuccin").setup({
             lavender = "#ffffff",
             yellow = "#ff7b72",
             peach = "#d2a8ff",  -- "#7287fd", -- "#d2a8ff",
-            sky = "#df4a16",
+            sky = "#91ddff",
         },
     },
 
