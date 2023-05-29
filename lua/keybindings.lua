@@ -51,7 +51,7 @@ map("v", "K", ":move '<-2<CR>gv-gv", opt)
 local pluginKeys = {}
 -- treesitter 折叠
 map("n", "zz", ":foldclose<CR>", opt)
-map("n", "zx", ":foldopen<CR>", opt)
+map("n", "Z", ":foldopen<CR>", opt)
 
 -- nvim-tree
 -- alt + m 键打开关闭tree

@@ -116,7 +116,10 @@ return require('packer').startup({
                 require("toggleterm").setup()
             end
         })
+        -- coc.nvim
         use({'neoclide/coc.nvim', branch = 'release'})
+        -- tagbar
+        use("preservim/tagbar")
 
 
     end,
@@ -124,7 +127,7 @@ return require('packer').startup({
         max_jobs = 16,
         git = {
             -- default_url_format = 'https://hub.fastgit.org/%s'
-            -- default_url_format = "https://gitclone.com/github.com/%s",
+            default_url_format = "https://gitclone.com/github.com/%s",
         },
         display = {
             open_fn = function()
