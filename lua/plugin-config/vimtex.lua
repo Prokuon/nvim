@@ -1,75 +1,20 @@
-local status, ident_blankline = pcall(require, "indent_blankline")
+local status, vimtex = pcall(require, "vimtex")
 if not status then
-  vim.notify("没有找到 indent_blankline")
+  vim.notify("没有找到 vimtex")
   return
 end
-vim.opt.termguicolors = true
-vim.cmd [[highlight IndentBlanklineIndent1 guifg=#E06C75 gui=nocombine]]
-vim.cmd [[highlight IndentBlanklineIndent2 guifg=#E5C07B gui=nocombine]]
-vim.cmd [[highlight IndentBlanklineIndent3 guifg=#98C379 gui=nocombine]]
-vim.cmd [[highlight IndentBlanklineIndent4 guifg=#61AFEF gui=nocombine]]
 
--- vim.cmd [[highlight IndentBlanklineIndent1 guifg=#1a1a1a gui=nocombine]]
--- vim.cmd [[highlight IndentBlanklineIndent2 guifg=#121212 gui=nocombine]]
--- vim.cmd [[highlight IndentBlanklineIndent3 guifg=#0a0a0a gui=nocombine]]
--- vim.cmd [[highlight IndentBlanklineIndent4 guifg=#000000 gui=nocombine]]
-
-vim.opt.list = true
-vim.opt.listchars:append "space:⋅"
--- vim.opt.listchars:append "eol:↴"
-
-ident_blankline.setup({
-    -- 空行占位
-    space_char_blankline = " ",
-    -- 用 treesitter 判断上下文
-    show_current_context = true,
-    show_current_context_start = true,
-    context_patterns = {
-        "class",
-        "function",
-        "method",
-        "element",
-        "^if",
-        "^while",
-        "^for",
-        "^object",
-        "^table",
-        "block",
-        "arguments",
-    },
-    -- :echo &filetype
-    filetype_exclude = {
-        "dashboard",
-        "packer",
-        "terminal",
-        "help",
-        "log",
-        "markdown",
-        "TelescopePrompt",
-        "lsp-installer",
-        "lspinfo",
-        "toggleterm",
-    },
-    -- 竖线样式
-    -- char = '¦'
-    -- char = '┆'
-    -- char = '│'
-    -- char = "⎸",
-    char_highlight_list = {
-        "IndentBlanklineIndent1",
-        "IndentBlanklineIndent2",
-        "IndentBlanklineIndent3",
-        "IndentBlanklineIndent4",
-    },
-
-    -- space_char_highlight_list = {
-    --     "IndentBlanklineIndent1",
-    --     "IndentBlanklineIndent2",
-    --     "IndentBlanklineIndent3",
-    --     "IndentBlanklineIndent4",
-    -- },
-
-    -- show_trailing_blankline_indent = false,
-
-    char = "▏",
+vimtex.setup({
+    -- opt = true,
+    -- config = function ()
+    --     vim.g.vimtex_view_general_viewer = 'okular'
+    --     vim.g.vimtex_compiler_latexmk_engines = {
+    --         _ = '-xelatex'
+    --     }
+    --     vim.g.tex_comment_nospell = 1
+    --     vim.g.vimtex_compiler_progname = 'nvr'
+    --     vim.g.vimtex_view_general_options = [[--unique file:@pdf\#src:@line@tex]]
+    --     vim.g.vimtex_view_general_options_latexmk = '--unique'
+    -- end,
+    -- ft = 'tex'
 })

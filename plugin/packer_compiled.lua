@@ -78,211 +78,216 @@ _G.packer_plugins = {
     config = { "\27LJ\2\n5\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\fComment\frequire\0" },
     loaded = true,
     path = "/home/prokyon/.local/share/nvim/site/pack/packer/start/Comment.nvim",
-    url = "https://github.com/numToStr/Comment.nvim"
+    url = "https://gitclone.com/github.com/numToStr/Comment.nvim"
   },
   LuaSnip = {
     loaded = true,
     path = "/home/prokyon/.local/share/nvim/site/pack/packer/start/LuaSnip",
-    url = "https://github.com/L3MON4D3/LuaSnip"
+    url = "https://gitclone.com/github.com/L3MON4D3/LuaSnip"
   },
   ["bclose.vim"] = {
     loaded = true,
     path = "/home/prokyon/.local/share/nvim/site/pack/packer/start/bclose.vim",
-    url = "https://github.com/rbgrouleff/bclose.vim"
+    url = "https://gitclone.com/github.com/rbgrouleff/bclose.vim"
   },
   ["bufferline.nvim"] = {
     loaded = true,
     path = "/home/prokyon/.local/share/nvim/site/pack/packer/start/bufferline.nvim",
-    url = "https://github.com/akinsho/bufferline.nvim"
+    url = "https://gitclone.com/github.com/akinsho/bufferline.nvim"
   },
   catppuccin = {
     loaded = true,
     path = "/home/prokyon/.local/share/nvim/site/pack/packer/start/catppuccin",
-    url = "https://github.com/catppuccin/nvim"
+    url = "https://gitclone.com/github.com/catppuccin/nvim"
   },
   ["cmp-buffer"] = {
     loaded = true,
     path = "/home/prokyon/.local/share/nvim/site/pack/packer/start/cmp-buffer",
-    url = "https://github.com/hrsh7th/cmp-buffer"
+    url = "https://gitclone.com/github.com/hrsh7th/cmp-buffer"
   },
   ["cmp-cmdline"] = {
     loaded = true,
     path = "/home/prokyon/.local/share/nvim/site/pack/packer/start/cmp-cmdline",
-    url = "https://github.com/hrsh7th/cmp-cmdline"
+    url = "https://gitclone.com/github.com/hrsh7th/cmp-cmdline"
   },
   ["cmp-nvim-lsp"] = {
     loaded = true,
     path = "/home/prokyon/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
-    url = "https://github.com/hrsh7th/cmp-nvim-lsp"
+    url = "https://gitclone.com/github.com/hrsh7th/cmp-nvim-lsp"
   },
   ["cmp-path"] = {
     loaded = true,
     path = "/home/prokyon/.local/share/nvim/site/pack/packer/start/cmp-path",
-    url = "https://github.com/hrsh7th/cmp-path"
+    url = "https://gitclone.com/github.com/hrsh7th/cmp-path"
   },
   ["cmp-vsnip"] = {
     loaded = true,
     path = "/home/prokyon/.local/share/nvim/site/pack/packer/start/cmp-vsnip",
-    url = "https://github.com/hrsh7th/cmp-vsnip"
+    url = "https://gitclone.com/github.com/hrsh7th/cmp-vsnip"
   },
   ["coc.nvim"] = {
     loaded = true,
     path = "/home/prokyon/.local/share/nvim/site/pack/packer/start/coc.nvim",
-    url = "https://github.com/neoclide/coc.nvim"
+    url = "https://gitclone.com/github.com/neoclide/coc.nvim"
   },
   ["dashboard-nvim"] = {
     loaded = true,
     path = "/home/prokyon/.local/share/nvim/site/pack/packer/start/dashboard-nvim",
-    url = "https://github.com/glepnir/dashboard-nvim"
+    url = "https://gitclone.com/github.com/glepnir/dashboard-nvim"
   },
   ["friendly-snippets"] = {
     loaded = true,
     path = "/home/prokyon/.local/share/nvim/site/pack/packer/start/friendly-snippets",
-    url = "https://github.com/rafamadriz/friendly-snippets"
+    url = "https://gitclone.com/github.com/rafamadriz/friendly-snippets"
   },
   ["indent-blankline.nvim"] = {
     loaded = true,
     path = "/home/prokyon/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim",
-    url = "https://github.com/lukas-reineke/indent-blankline.nvim"
+    url = "https://gitclone.com/github.com/lukas-reineke/indent-blankline.nvim"
   },
   ["lspkind-nvim"] = {
     loaded = true,
     path = "/home/prokyon/.local/share/nvim/site/pack/packer/start/lspkind-nvim",
-    url = "https://github.com/onsails/lspkind-nvim"
+    url = "https://gitclone.com/github.com/onsails/lspkind-nvim"
   },
   ["lualine-lsp-progress"] = {
     loaded = true,
     path = "/home/prokyon/.local/share/nvim/site/pack/packer/start/lualine-lsp-progress",
-    url = "https://github.com/arkav/lualine-lsp-progress"
+    url = "https://gitclone.com/github.com/arkav/lualine-lsp-progress"
   },
   ["lualine.nvim"] = {
     loaded = true,
     path = "/home/prokyon/.local/share/nvim/site/pack/packer/start/lualine.nvim",
-    url = "https://github.com/nvim-lualine/lualine.nvim"
+    url = "https://gitclone.com/github.com/nvim-lualine/lualine.nvim"
   },
   ["markdown-preview.nvim"] = {
     loaded = false,
     needs_bufread = false,
     only_cond = false,
     path = "/home/prokyon/.local/share/nvim/site/pack/packer/opt/markdown-preview.nvim",
-    url = "https://github.com/iamcco/markdown-preview.nvim"
+    url = "https://gitclone.com/github.com/iamcco/markdown-preview.nvim"
   },
   ["mason-lspconfig.nvim"] = {
     loaded = true,
     path = "/home/prokyon/.local/share/nvim/site/pack/packer/start/mason-lspconfig.nvim",
-    url = "https://github.com/williamboman/mason-lspconfig.nvim"
+    url = "https://gitclone.com/github.com/williamboman/mason-lspconfig.nvim"
   },
   ["mason.nvim"] = {
     loaded = true,
     path = "/home/prokyon/.local/share/nvim/site/pack/packer/start/mason.nvim",
-    url = "https://github.com/williamboman/mason.nvim"
+    url = "https://gitclone.com/github.com/williamboman/mason.nvim"
   },
   ["neodev.nvim"] = {
     loaded = true,
     path = "/home/prokyon/.local/share/nvim/site/pack/packer/start/neodev.nvim",
-    url = "https://github.com/folke/neodev.nvim"
+    url = "https://gitclone.com/github.com/folke/neodev.nvim"
   },
   ["nvim-autopairs"] = {
     config = { "\27LJ\2\n@\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\19nvim-autopairs\frequire\0" },
     loaded = true,
     path = "/home/prokyon/.local/share/nvim/site/pack/packer/start/nvim-autopairs",
-    url = "https://github.com/windwp/nvim-autopairs"
+    url = "https://gitclone.com/github.com/windwp/nvim-autopairs"
   },
   ["nvim-cmp"] = {
     loaded = true,
     path = "/home/prokyon/.local/share/nvim/site/pack/packer/start/nvim-cmp",
-    url = "https://github.com/hrsh7th/nvim-cmp"
+    url = "https://gitclone.com/github.com/hrsh7th/nvim-cmp"
   },
   ["nvim-tree.lua"] = {
     loaded = true,
     path = "/home/prokyon/.local/share/nvim/site/pack/packer/start/nvim-tree.lua",
-    url = "https://github.com/nvim-tree/nvim-tree.lua"
+    url = "https://gitclone.com/github.com/nvim-tree/nvim-tree.lua"
   },
   ["nvim-treesitter"] = {
     loaded = true,
     path = "/home/prokyon/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
-    url = "https://github.com/nvim-treesitter/nvim-treesitter"
+    url = "https://gitclone.com/github.com/nvim-treesitter/nvim-treesitter"
   },
   ["nvim-web-devicons"] = {
     loaded = true,
     path = "/home/prokyon/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
-    url = "https://github.com/nvim-tree/nvim-web-devicons"
+    url = "https://gitclone.com/github.com/nvim-tree/nvim-web-devicons"
   },
   ["onedark.nvim"] = {
     loaded = true,
     path = "/home/prokyon/.local/share/nvim/site/pack/packer/start/onedark.nvim",
-    url = "https://github.com/navarasu/onedark.nvim"
+    url = "https://gitclone.com/github.com/navarasu/onedark.nvim"
   },
   ["packer.nvim"] = {
     loaded = true,
     path = "/home/prokyon/.local/share/nvim/site/pack/packer/start/packer.nvim",
-    url = "https://github.com/wbthomason/packer.nvim"
+    url = "https://gitclone.com/github.com/wbthomason/packer.nvim"
   },
   ["plenary.nvim"] = {
     loaded = true,
     path = "/home/prokyon/.local/share/nvim/site/pack/packer/start/plenary.nvim",
-    url = "https://github.com/nvim-lua/plenary.nvim"
+    url = "https://gitclone.com/github.com/nvim-lua/plenary.nvim"
   },
   ["project.nvim"] = {
     loaded = true,
     path = "/home/prokyon/.local/share/nvim/site/pack/packer/start/project.nvim",
-    url = "https://github.com/ahmedkhalf/project.nvim"
+    url = "https://gitclone.com/github.com/ahmedkhalf/project.nvim"
   },
   ["ranger.vim"] = {
     loaded = true,
     path = "/home/prokyon/.local/share/nvim/site/pack/packer/start/ranger.vim",
-    url = "https://github.com/francoiscabrol/ranger.vim"
+    url = "https://gitclone.com/github.com/francoiscabrol/ranger.vim"
   },
   ["rust-tools.nvim"] = {
     loaded = true,
     path = "/home/prokyon/.local/share/nvim/site/pack/packer/start/rust-tools.nvim",
-    url = "https://github.com/simrat39/rust-tools.nvim"
+    url = "https://gitclone.com/github.com/simrat39/rust-tools.nvim"
   },
   ["schemastore.nvim"] = {
     loaded = true,
     path = "/home/prokyon/.local/share/nvim/site/pack/packer/start/schemastore.nvim",
-    url = "https://github.com/b0o/schemastore.nvim"
+    url = "https://gitclone.com/github.com/b0o/schemastore.nvim"
   },
   ["suda.vim"] = {
     loaded = true,
     path = "/home/prokyon/.local/share/nvim/site/pack/packer/start/suda.vim",
-    url = "https://github.com/lambdalisue/suda.vim"
+    url = "https://gitclone.com/github.com/lambdalisue/suda.vim"
+  },
+  tagbar = {
+    loaded = true,
+    path = "/home/prokyon/.local/share/nvim/site/pack/packer/start/tagbar",
+    url = "https://gitclone.com/github.com/preservim/tagbar"
   },
   ["telescope-env.nvim"] = {
     loaded = true,
     path = "/home/prokyon/.local/share/nvim/site/pack/packer/start/telescope-env.nvim",
-    url = "https://github.com/LinArcX/telescope-env.nvim"
+    url = "https://gitclone.com/github.com/LinArcX/telescope-env.nvim"
   },
   ["telescope.nvim"] = {
     loaded = true,
     path = "/home/prokyon/.local/share/nvim/site/pack/packer/start/telescope.nvim",
-    url = "https://github.com/nvim-telescope/telescope.nvim"
+    url = "https://gitclone.com/github.com/nvim-telescope/telescope.nvim"
   },
   ["toggleterm.nvim"] = {
     config = { "\27LJ\2\n8\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\15toggleterm\frequire\0" },
     loaded = true,
     path = "/home/prokyon/.local/share/nvim/site/pack/packer/start/toggleterm.nvim",
-    url = "https://github.com/akinsho/toggleterm.nvim"
+    url = "https://gitclone.com/github.com/akinsho/toggleterm.nvim"
   },
   ["tokyonight.nvim"] = {
     loaded = true,
     path = "/home/prokyon/.local/share/nvim/site/pack/packer/start/tokyonight.nvim",
-    url = "https://github.com/folke/tokyonight.nvim"
+    url = "https://gitclone.com/github.com/folke/tokyonight.nvim"
   },
   ["vim-airline"] = {
     loaded = true,
     path = "/home/prokyon/.local/share/nvim/site/pack/packer/start/vim-airline",
-    url = "https://github.com/vim-airline/vim-airline"
+    url = "https://gitclone.com/github.com/vim-airline/vim-airline"
   },
   ["vim-airline-themes"] = {
     loaded = true,
     path = "/home/prokyon/.local/share/nvim/site/pack/packer/start/vim-airline-themes",
-    url = "https://github.com/vim-airline/vim-airline-themes"
+    url = "https://gitclone.com/github.com/vim-airline/vim-airline-themes"
   },
   ["vim-bbye"] = {
     loaded = true,
     path = "/home/prokyon/.local/share/nvim/site/pack/packer/start/vim-bbye",
-    url = "https://github.com/moll/vim-bbye"
+    url = "https://gitclone.com/github.com/moll/vim-bbye"
   },
   ["vim-matchup"] = {
     after_files = { "/home/prokyon/.local/share/nvim/site/pack/packer/opt/vim-matchup/after/plugin/matchit.vim" },
@@ -290,17 +295,17 @@ _G.packer_plugins = {
     needs_bufread = true,
     only_cond = false,
     path = "/home/prokyon/.local/share/nvim/site/pack/packer/opt/vim-matchup",
-    url = "https://github.com/andymass/vim-matchup"
+    url = "https://gitclone.com/github.com/andymass/vim-matchup"
   },
   ["vim-vsnip"] = {
     loaded = true,
     path = "/home/prokyon/.local/share/nvim/site/pack/packer/start/vim-vsnip",
-    url = "https://github.com/hrsh7th/vim-vsnip"
+    url = "https://gitclone.com/github.com/hrsh7th/vim-vsnip"
   },
   vimtex = {
     loaded = true,
     path = "/home/prokyon/.local/share/nvim/site/pack/packer/start/vimtex",
-    url = "https://github.com/lervag/vimtex"
+    url = "https://gitclone.com/github.com/lervag/vimtex"
   }
 }
 

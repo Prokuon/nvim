@@ -4,10 +4,10 @@ if not status then
   return
 end
 vim.opt.termguicolors = true
-vim.cmd [[highlight IndentBlanklineIndent1 guifg=#183E6C gui=nocombine]]
-vim.cmd [[highlight IndentBlanklineIndent2 guifg=#3B6AA8 gui=nocombine]]
-vim.cmd [[highlight IndentBlanklineIndent3 guifg=#71A5D3 gui=nocombine]]
-vim.cmd [[highlight IndentBlanklineIndent4 guifg=#B4D3E6 gui=nocombine]]
+vim.cmd [[highlight IndentBlanklineIndent1 guifg=#de0f39 gui=nocombine]]
+vim.cmd [[highlight IndentBlanklineIndent2 guifg=#df4a16 gui=nocombine]]
+vim.cmd [[highlight IndentBlanklineIndent3 guifg=#95b6d4 gui=nocombine]]
+vim.cmd [[highlight IndentBlanklineIndent4 guifg=#7287fd gui=nocombine]]
 
 -- vim.cmd [[highlight IndentBlanklineIndent1 guifg=#1a1a1a gui=nocombine]]
 -- vim.cmd [[highlight IndentBlanklineIndent2 guifg=#121212 gui=nocombine]]
@@ -16,7 +16,7 @@ vim.cmd [[highlight IndentBlanklineIndent4 guifg=#B4D3E6 gui=nocombine]]
 
 vim.opt.list = true
 vim.opt.listchars:append "space:⋅"
--- vim.opt.listchars:append "eol:↴"
+vim.opt.listchars:append "eol:↴"
 
 ident_blankline.setup({
     -- 空行占位
@@ -53,13 +53,14 @@ ident_blankline.setup({
     -- 竖线样式
     -- char = '¦'
     -- char = '┆'
-    -- char = '│'
+    -- char = '│',
     -- char = "⎸",
+    char = "▏",
     char_highlight_list = {
-        "IndentBlanklineIndent1",
-        "IndentBlanklineIndent2",
-        "IndentBlanklineIndent3",
         "IndentBlanklineIndent4",
+        "IndentBlanklineIndent3",
+        "IndentBlanklineIndent2",
+        "IndentBlanklineIndent1",
     },
 
     -- space_char_highlight_list = {
@@ -70,6 +71,5 @@ ident_blankline.setup({
     -- },
 
     -- show_trailing_blankline_indent = false,
-
     char = "▏",
 })

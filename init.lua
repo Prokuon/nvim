@@ -32,7 +32,7 @@ require("plugin-config.project")
 -- 代码高亮
 require("plugin-config.nvim-treesitter")
 -- Latex
-require("plugin-config.vimtex")
+-- require("plugin-config.vimtex")
 -- 代码块
 require("plugin-config.luasnip")
 -- 浮动终端
