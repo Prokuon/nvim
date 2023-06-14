@@ -103,6 +103,9 @@ vim.api.nvim_create_user_command('M', 'Mason', {})
 -- ranger
 map("n", "<A-f>", ":Ranger<CR>", opt)
 
+-- tagbar
+map("n", "ta", ":TagbarToggle<CR>", opt)
+
 -- Telescope 列表中 插入模式快捷键
 pluginKeys.telescopeList = {
     i = {
