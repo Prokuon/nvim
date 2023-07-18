@@ -4,10 +4,10 @@ if not status then
   return
 end
 vim.opt.termguicolors = true
-vim.cmd [[highlight IndentBlanklineIndent1 guifg=#de0f39 gui=nocombine]]
-vim.cmd [[highlight IndentBlanklineIndent2 guifg=#df4a16 gui=nocombine]]
-vim.cmd [[highlight IndentBlanklineIndent3 guifg=#95b6d4 gui=nocombine]]
-vim.cmd [[highlight IndentBlanklineIndent4 guifg=#7287fd gui=nocombine]]
+vim.cmd [[highlight IndentBlanklineIndent1 guifg=#6375d5 gui=nocombine]]
+vim.cmd [[highlight IndentBlanklineIndent2 guifg=#d6a44a gui=nocombine]]
+vim.cmd [[highlight IndentBlanklineIndent3 guifg=#de6235 gui=nocombine]]
+vim.cmd [[highlight IndentBlanklineIndent4 guifg=#c42437 gui=nocombine]]
 
 -- vim.cmd [[highlight IndentBlanklineIndent1 guifg=#1a1a1a gui=nocombine]]
 -- vim.cmd [[highlight IndentBlanklineIndent2 guifg=#121212 gui=nocombine]]
@@ -57,10 +57,10 @@ ident_blankline.setup({
     -- char = "⎸",
     char = "▏",
     char_highlight_list = {
-        "IndentBlanklineIndent4",
-        "IndentBlanklineIndent3",
-        "IndentBlanklineIndent2",
         "IndentBlanklineIndent1",
+        "IndentBlanklineIndent2",
+        "IndentBlanklineIndent3",
+        "IndentBlanklineIndent4",
     },
 
     -- space_char_highlight_list = {
